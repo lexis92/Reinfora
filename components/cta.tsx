@@ -32,11 +32,11 @@ export function CTA() {
               <input
                 type="email"
                 placeholder="you@yourpractice.com"
-                className="h-12 w-full flex-1 rounded-full border border-black/10 dark:border-white/15 bg-white dark:bg-neutral-900 px-5 text-sm text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 dark:placeholder:text-neutral-500 outline-none focus:border-brand-400 focus:ring-4 focus:ring-brand-200/60 dark:focus:ring-brand-400/20 transition"
+                className="h-14 w-full flex-1 appearance-none rounded-full border border-black/10 dark:border-white/15 bg-white dark:bg-neutral-900 px-5 text-base leading-none text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 dark:placeholder:text-neutral-500 outline-none focus:border-brand-400 focus:ring-4 focus:ring-brand-200/60 dark:focus:ring-brand-400/20 transition"
               />
               <button
                 type="submit"
-                className="group inline-flex h-12 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-neutral-900 dark:bg-brand-400 dark:text-neutral-950 px-6 text-sm font-medium text-white transition hover:bg-neutral-800 dark:hover:bg-brand-300"
+                className="group inline-flex h-14 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-neutral-900 dark:bg-brand-400 dark:text-neutral-950 px-6 text-base font-medium leading-none text-white transition hover:bg-neutral-800 dark:hover:bg-brand-300"
               >
                 Start trial
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
