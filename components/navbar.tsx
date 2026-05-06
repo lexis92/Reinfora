@@ -8,10 +8,12 @@ import { ThemeToggle } from "./theme-toggle";
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "Product", href: "#features" },
-  { label: "How it works", href: "#how" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Features", href: "/features" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Compare", href: "/compare" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -59,7 +61,7 @@ export function Navbar() {
             Sign in
           </Link>
           <Link
-            href="#cta"
+            href="/demo"
             className="group hidden md:inline-flex items-center gap-1.5 rounded-full bg-neutral-900 dark:bg-brand-400 dark:text-neutral-950 px-3.5 py-1.5 text-sm font-medium text-white transition hover:bg-neutral-800 dark:hover:bg-brand-300"
           >
             Get started
@@ -138,7 +140,7 @@ export function Navbar() {
                 Sign in
               </Link>
               <Link
-                href="#cta"
+                href="/demo"
                 onClick={() => setOpen(false)}
                 className="group w-full inline-flex items-center justify-center gap-2 rounded-full bg-neutral-900 dark:bg-brand-400 dark:text-neutral-950 px-4 py-3 text-sm font-medium text-white transition hover:bg-neutral-800 dark:hover:bg-brand-300"
               >

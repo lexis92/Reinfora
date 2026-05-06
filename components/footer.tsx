@@ -4,19 +4,41 @@ import { Logo } from "./logo";
 const groups = [
   {
     title: "Product",
-    links: ["Features", "Pricing", "Security", "Changelog"],
+    links: [
+      { label: "Features", href: "/features" },
+      { label: "Client management", href: "/features/client-management" },
+      { label: "Scheduling", href: "/features/scheduling" },
+      { label: "Data collection", href: "/features/data-collection" },
+      { label: "Reporting", href: "/features/reporting" },
+      { label: "Pricing", href: "/#pricing" },
+    ],
+  },
+  {
+    title: "Compare",
+    links: [
+      { label: "vs CentralReach", href: "/compare/centralreach" },
+      { label: "vs Rethink", href: "/compare/rethink" },
+      { label: "Best ABA software", href: "/compare/best-aba-software" },
+      { label: "All comparisons", href: "/compare" },
+    ],
   },
   {
     title: "Company",
-    links: ["About", "Careers", "Contact", "Press"],
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Contact", href: "/contact" },
+      { label: "Book a demo", href: "/demo" },
+      { label: "Blog", href: "/blog" },
+    ],
   },
   {
-    title: "Resources",
-    links: ["Help center", "Clinician library", "Guides", "API"],
-  },
-  {
-    title: "Legal",
-    links: ["Privacy", "Terms", "HIPAA", "BAA"],
+    title: "Trust",
+    links: [
+      { label: "Security", href: "/security" },
+      { label: "HIPAA & BAA", href: "/hipaa" },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
+    ],
   },
 ];
 
@@ -26,12 +48,12 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-10">
           <div className="col-span-2">
-            <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <Logo className="h-7 w-7" />
               <span className="text-lg font-semibold tracking-tight dark:text-white">
                 Reinfora
               </span>
-            </div>
+            </Link>
             <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400 max-w-xs">
               The modern platform for ABA therapy — purpose-built for BCBAs, RBTs,
               and the families they serve.
@@ -44,12 +66,12 @@ export function Footer() {
               </div>
               <ul className="mt-3 space-y-2">
                 {g.links.map((l) => (
-                  <li key={l}>
+                  <li key={l.label}>
                     <Link
-                      href="#"
+                      href={l.href}
                       className="text-sm text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white"
                     >
-                      {l}
+                      {l.label}
                     </Link>
                   </li>
                 ))}
