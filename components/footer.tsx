@@ -34,6 +34,7 @@ const groups = [
   {
     title: "Trust",
     links: [
+      { label: "Help center", href: "/help" },
       { label: "Security", href: "/security" },
       { label: "HIPAA & BAA", href: "/hipaa" },
       { label: "Privacy", href: "/privacy" },
